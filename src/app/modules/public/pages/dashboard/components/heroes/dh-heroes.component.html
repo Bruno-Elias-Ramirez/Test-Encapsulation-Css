@@ -1,0 +1,16 @@
+<nz-row class="dh-heroes__row"
+        nzGutter="24">
+  <nz-col *ngFor="let hero of heroes"
+          class="dh-heroes__col"
+          [nzSpan]="4">
+    <nz-card class="dh-heroes__card"
+             (click)="openCropperModal(hero)">
+      <img class="dh-heroes__image"
+           nz-card-cover
+           [src]="hero.img"
+           [alt]="hero.name"/>
+
+      <nz-card-meta [nzTitle]="hero.name"></nz-card-meta>
+    </nz-card>
+  </nz-col>
+</nz-row>

@@ -1,0 +1,23 @@
+.dh-dashboard {
+  &__header {
+    align-items: center;
+    background: var(--dh-color-background-content);
+    border-bottom: 1px solid var(--dh-color-border-light);
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    padding: 0 24px;
+    width: 100%;
+  }
+
+  &__header-title {
+    color: var(--dh-color-text-primary);
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__header-user {
+    color: var(--dh-color-text-secondary);
+    font-size: 14px;
+  }
+}

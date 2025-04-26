@@ -1,0 +1,46 @@
+.dh-dashboard {
+  background: var(--dh-color-background-light);
+  font-family: var(--dh-font-family);
+  min-height: 100vh;
+
+  &__content {
+    display: flex;
+    margin: 24px;
+  }
+
+  &__inner-content {
+    background: var(--dh-color-background-content);
+    border-radius: 8px;
+    box-shadow: var(--dh-color-shadow-light);
+    flex: 1;
+    padding: 24px;
+  }
+
+  &__logo {
+    align-items: center;
+    display: flex;
+    height: 64px;
+    justify-content: center;
+    margin: 16px;
+
+    &-image {
+      max-height: 40px;
+    }
+  }
+
+  &__menu {
+    color: var(--dh-color-sider-text);
+    font-size: 14px;
+    margin-top: 24px;
+
+    &-item--active {
+      background-color: var(--dh-color-hover);
+      color: var(--dh-color-primary);
+    }
+  }
+
+  &__sider {
+    background: var(--dh-color-sider-background);
+    border-right: 1px solid var(--dh-color-border-light);
+  }
+}

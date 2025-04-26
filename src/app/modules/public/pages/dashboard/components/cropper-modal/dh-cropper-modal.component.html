@@ -1,0 +1,44 @@
+<nz-upload class="dh-cropper__upload"
+           nzAccept="image/*"
+           [nzBeforeUpload]="beforeUpload"
+           [nzShowUploadList]="false">
+  <button nz-button class="dh-cropper__upload-button">
+    <i nz-icon nzType="upload"></i>
+    Select Image
+  </button>
+</nz-upload>
+
+<div *ngIf="imageChangedEvent"
+     class="dh-cropper__container">
+  <image-cropper class="dh-cropper"
+                 [aspectRatio]="1"
+                 [format]="'png'"
+                 [imageChangedEvent]="imageChangedEvent"
+                 [maintainAspectRatio]="true"
+                 [resizeToWidth]="300"
+                 (imageCropped)="onImageCropped($event)">
+  </image-cropper>
+</div>
+
+<div *ngIf="croppedImage"
+     class="dh-cropper__preview">
+  <h4 class="dh-cropper__title">Preview</h4>
+
+  <img class="dh-cropper__preview-image"
+       alt="Cropped Image"
+       [src]="croppedImage"/>
+</div>
+
+<div class="dh-cropper__actions">
+  <button nz-button
+          nzType="primary"
+          (click)="confirmCrop()"
+          [disabled]="!croppedImage">
+    Save
+  </button>
+
+  <button nz-button
+          (click)="cancel()">
+    Cancel
+  </button>
+</div>

@@ -1,0 +1,46 @@
+<nz-layout class="dh-dashboard">
+  <nz-sider class="dh-dashboard__sider"
+            nzTheme="light"
+            [nzWidth]="200"
+            [nzBreakpoint]="'lg'"
+            [nzCollapsedWidth]="0">
+    <div class="dh-dashboard__logo">
+      <img class="dh-dashboard__logo-image"
+           src="assets/images/dota-2-logo.png"
+           alt="Dota 2 Logo"/>
+    </div>
+
+    <ul class="dh-dashboard__menu"
+        nz-menu
+        nzTheme="light"
+        nzMode="inline">
+      <li class="dh-dashboard__menu-item"
+          nz-menu-item
+          routerLinkActive="dh-dashboard__menu-item--active">
+        Heroes
+      </li>
+
+      <li class="dh-dashboard__menu-item"
+          nz-menu-item
+          [nzDisabled]="true">
+        Teams
+      </li>
+
+      <li class="dh-dashboard__menu-item"
+          nz-menu-item
+          [nzDisabled]="true">
+        Tournaments
+      </li>
+    </ul>
+  </nz-sider>
+
+  <nz-layout class="dh-dashboard__layout">
+    <dh-header class="dh-dashboard__header"></dh-header>
+
+    <nz-content class="dh-dashboard__content">
+      <div class="dh-dashboard__inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

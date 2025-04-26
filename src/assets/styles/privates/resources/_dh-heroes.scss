@@ -1,0 +1,26 @@
+.dh-heroes__row {
+  font-family: var(--dh-font-family);
+  padding: 24px;
+}
+
+.dh-heroes__col {
+  margin-bottom: 24px;
+}
+
+.dh-heroes__card {
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s, transform 0.3s;
+
+  &:hover {
+    box-shadow: var(--dh-color-shadow-medium);
+    transform: translateY(-5px);
+  }
+}
+
+.dh-heroes__image {
+  border-bottom: 1px solid var(--dh-color-border-light);
+  width: 100%;
+}

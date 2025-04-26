@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/dh-styles";
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --dh-color-background-light: #f5f7fa;
+  --dh-color-background-content: #ffffff;
+  --dh-color-primary: #1890ff;
+  --dh-color-sider-background: #ffffff;
+  --dh-color-sider-text: #1d1d1f;
+  --dh-color-hover: #e6f7ff;
+  --dh-color-border-light: #d9d9d9;
+  --dh-color-shadow-light: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --dh-color-shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.1);
+  --dh-font-family: 'Poppins', sans-serif;
+  --dh-color-cropper-background: #ffffff;
+  --dh-color-cropper-border: #d9d9d9;
+  --dh-color-cropper-line: #1890ff;
+  --dh-color-cropper-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --dh-border-radius-medium: 12px;
+}
+
+
+
+
